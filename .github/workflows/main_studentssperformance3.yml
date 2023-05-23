@@ -35,7 +35,7 @@ jobs:
           !venv/
 
     - name: Login to Docker registry
-      uses: docker/login-action@v1
+      uses: docker/login-action@v2
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
